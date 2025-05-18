@@ -2,52 +2,53 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Container from "../Container";
 import { MdHome, MdApartment, MdBusiness, MdConstruction, MdDesignServices, MdEco } from "react-icons/md";
+import { services } from "../../data/data";
 
 function ServicesOverview() {
-  const services = [
-    {
-      id: 1,
-      title: "Residential Construction",
-      description: "Custom homes, renovations, and additions tailored to your lifestyle and preferences.",
-      icon: MdHome,
-      image: "/src/Assets/villa.jpg"
-    },
-    {
-      id: 2,
-      title: "Commercial Construction",
-      description: "Office buildings, retail spaces, and industrial facilities built to the highest standards.",
-      icon: MdBusiness,
-      image: "/src/Assets/commercial-1.jpg"
-    },
-    {
-      id: 3,
-      title: "Renovations & Additions",
-      description: "Transform your existing space with expert renovations and thoughtful additions.",
-      icon: MdConstruction,
-      image: "/src/Assets/villa1.jpg"
-    },
-    {
-      id: 4,
-      title: "Apartment Complexes",
-      description: "Multi-unit residential buildings designed for comfort, convenience, and community.",
-      icon: MdApartment,
-      image: "/src/Assets/Apartment.jpg"
-    },
-    {
-      id: 5,
-      title: "Design-Build Services",
-      description: "Streamlined process with a single point of contact for both design and construction.",
-      icon: MdDesignServices,
-      image: "/src/Assets/blueprint/blueprint_1.png"
-    },
-    {
-      id: 6,
-      title: "Sustainable Building",
-      description: "Eco-friendly construction practices and energy-efficient building solutions.",
-      icon: MdEco,
-      image: "/src/Assets/villa2.jpg"
-    }
-  ];
+  // const services = [
+  //   {
+  //     id: 1,
+  //     title: "Residential Construction",
+  //     description: "Custom homes, renovations, and additions tailored to your lifestyle and preferences.",
+  //     icon: MdHome,
+  //     image: "/src/Assets/villa.jpg"
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Commercial Construction",
+  //     description: "Office buildings, retail spaces, and industrial facilities built to the highest standards.",
+  //     icon: MdBusiness,
+  //     image: "/src/Assets/commercial-1.jpg"
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Renovations & Additions",
+  //     description: "Transform your existing space with expert renovations and thoughtful additions.",
+  //     icon: MdConstruction,
+  //     image: "/src/Assets/villa1.jpg"
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Apartment Complexes",
+  //     description: "Multi-unit residential buildings designed for comfort, convenience, and community.",
+  //     icon: MdApartment,
+  //     image: "/src/Assets/Apartment.jpg"
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Design-Build Services",
+  //     description: "Streamlined process with a single point of contact for both design and construction.",
+  //     icon: MdDesignServices,
+  //     image: "/src/Assets/blueprint/blueprint_1.png"
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Sustainable Building",
+  //     description: "Eco-friendly construction practices and energy-efficient building solutions.",
+  //     icon: MdEco,
+  //     image: "/src/Assets/villa2.jpg"
+  //   }
+  // ];
 
   return (
     <section className="py-16 bg-lightGray">

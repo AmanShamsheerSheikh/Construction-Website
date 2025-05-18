@@ -7,6 +7,15 @@ import image6 from "../Assets/medical.jpg";
 import image7 from "../Assets/woman-working-pharmacy-wearing-coat.jpg";
 import image8 from "../Assets/new-cairo-city.jpg";
 
+import SerivceImage1 from "../Assets/villa.jpg";
+import SerivceImage2 from "../Assets/commercial-1.jpg";
+import SerivceImage3 from "../Assets/villa1.jpg";
+import SerivceImage4 from "../Assets/Apartment.jpg";
+import SerivceImage5 from "../Assets/blueprint/blueprint_1.png";
+import SerivceImage6 from "../Assets/villa2.jpg";
+
+import { MdHome, MdApartment, MdBusiness, MdConstruction, MdDesignServices, MdEco } from "react-icons/md";
+
 import experienceIcon from "../Assets/experience-iconnn.png";
 import trustIcon from "../Assets/trust-icon.png";
 import varietyIcon from "../Assets/variety-icon.png";
@@ -328,9 +337,9 @@ export const formData = [
 ];
 
 export const contactInfoData = [
-  { id: 1, title: "+20 1151747091", image: phone },
-  { id: 2, title: "mustafakhaledinfo@gmail.com", image: email },
-  { id: 3, title: "Cairo, Egypt", image: location },
+  { id: 1, title: "+91 8317280673", image: phone },
+  { id: 2, title: "datahub@gmail.com", image: email },
+  { id: 3, title: "Mumbai, India", image: location },
 ];
 
 export const villaData = [
@@ -708,3 +717,48 @@ export const newCairoData = [
     Installment: 9,
   },
 ];
+
+export const services = [
+    {
+      id: 1,
+      title: "Residential Construction",
+      description: "Custom homes, renovations, and additions tailored to your lifestyle and preferences.",
+      icon: MdHome,
+      image: SerivceImage1
+    },
+    {
+      id: 2,
+      title: "Commercial Construction",
+      description: "Office buildings, retail spaces, and industrial facilities built to the highest standards.",
+      icon: MdBusiness,
+      image: SerivceImage2
+    },
+    {
+      id: 3,
+      title: "Renovations & Additions",
+      description: "Transform your existing space with expert renovations and thoughtful additions.",
+      icon: MdConstruction,
+      image: SerivceImage3
+    },
+    {
+      id: 4,
+      title: "Apartment Complexes",
+      description: "Multi-unit residential buildings designed for comfort, convenience, and community.",
+      icon: MdApartment,
+      image: SerivceImage4
+    },
+    {
+      id: 5,
+      title: "Design-Build Services",
+      description: "Streamlined process with a single point of contact for both design and construction.",
+      icon: MdDesignServices,
+      image: SerivceImage5
+    },
+    {
+      id: 6,
+      title: "Sustainable Building",
+      description: "Eco-friendly construction practices and energy-efficient building solutions.",
+      icon: MdEco,
+      image: SerivceImage6
+    }
+  ];

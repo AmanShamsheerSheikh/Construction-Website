@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Container from "../Container";
 import { Link } from "react-router-dom";
+import ImageSrc from "../../Assets/blueprint/office-1.jpg";
 
 function CompanyIntro() {
   return (
@@ -57,7 +58,7 @@ function CompanyIntro() {
           >
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/Assets/blueprint/office-1.jpg" 
+                src={ImageSrc} 
                 alt="NK Construction Team" 
                 className="w-full h-auto object-cover"
               />
