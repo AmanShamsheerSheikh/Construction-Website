@@ -132,50 +132,44 @@ function Services() {
   return (
     <div className="bg-lightGray">
       {/* Hero Section */}
-      <div className="relative h-[40vh] overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `url(/src/Assets/heroSection.jpg)`,
-            filter: 'brightness(0.7)'
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30" />
-        
+      <div className="bg-secondary py-20">
         <Container>
-          <div className="relative h-full flex flex-col items-center justify-center text-center z-10">
-            <motion.h1 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-whitee text-5xl md:text-6xl font-bold mb-6"
-            >
-              Our <span className="text-primary">Services</span>
-            </motion.h1>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="w-24 h-1 bg-primary mb-6"
-            />
-            
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-whitee text-lg max-w-2xl"
-            >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h2 className="text-primary text-lg font-medium mb-2">WHAT WE OFFER</h2>
+            <h3 className="text-white text-3xl md:text-4xl font-bold mb-6">Our Services</h3>
+            <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <p className="text-gray max-w-2xl mx-auto">
               Comprehensive construction services tailored to your needs
-            </motion.p>
-          </div>
+            </p>
+          </motion.div>
         </Container>
       </div>
 
       {/* Services Section */}
-      <section className="py-16">
+      <section className="py-16" id="all-services">
         <Container>
-          <div className="grid grid-cols-1 gap-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-primary text-lg font-medium mb-2">OUR EXPERTISE</h2>
+            <h3 className="text-white text-3xl md:text-4xl font-bold mb-6">What We Do</h3>
+            <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <p className="text-gray max-w-2xl mx-auto">
+              We provide a comprehensive range of construction services to meet all your building needs
+            </p>
+          </motion.div>
+          
+          <div className="grid grid-cols-1 gap-16" id="residential">
             {services.map((service, index) => (
               <motion.div 
                 key={service.id}
@@ -188,13 +182,11 @@ function Services() {
                 }`}
               >
                 <div className={`order-2 ${index % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}>
-                  <div className="relative">
-                    <img 
-                      src={service.image} 
-                      alt={service.title} 
-                      className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-                    />
-                    <div className={`absolute -bottom-6 ${index % 2 === 0 ? '-right-6' : '-left-6'} w-32 h-32 bg-primary rounded-lg z-[-1]`}></div>
+                  <div className="relative bg-whitee p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div className="w-20 h-20 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
+                      <service.icon className="text-5xl text-primary" />
+                    </div>
+                    <div className="w-16 h-1 bg-primary mb-4 mx-auto"></div>
                   </div>
                 </div>
                 

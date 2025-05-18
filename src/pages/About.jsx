@@ -32,7 +32,7 @@ function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-8"
+            className="text-center"
           >
             <h2 className="text-primary text-lg font-medium mb-2">OUR COMPANY</h2>
             <h3 className="text-white text-3xl md:text-4xl font-bold mb-6">About Us</h3>
@@ -42,19 +42,7 @@ function About() {
             </p>
           </motion.div>
           
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="flex justify-center"
-          >
-            <nav className="inline-flex bg-whitee/10 backdrop-blur-sm rounded-lg p-1">
-              <a href="#who-we-are" className="px-4 py-2 rounded-md bg-primary text-whitee">Who We Are</a>
-              <a href="#vision-mission" className="px-4 py-2 rounded-md text-white hover:bg-whitee/10 transition-colors">Vision & Mission</a>
-              <a href="#values" className="px-4 py-2 rounded-md text-white hover:bg-whitee/10 transition-colors">Our Values</a>
-            </nav>
-          </motion.div>
+          
         </Container>
       </div>
 

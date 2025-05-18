@@ -8,9 +8,7 @@ import {
   Single, 
   Testimonials,
   ProjectShowcase,
-  ProjectDetail,
-  Services,
-  Blog
+  ProjectDetail
 } from "./pages";
 
 import Header from "./components/Header";
@@ -28,8 +26,6 @@ function App() {
         <Route path="/project-showcase" element={<ProjectShowcase />} />
         <Route path="/project/:slug" element={<ProjectDetail />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path={"projects/:id"} element={<Single />} />

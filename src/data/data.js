@@ -198,10 +198,8 @@ export const projectsData = [
 export const headerData = [
   { id: 1, title: "Home", to: "/" },
   { id: 2, title: "Projects", to: "/project-showcase" },
-  { id: 3, title: "Services", to: "/services" },
-  { id: 4, title: "About", to: "/about" },
-  { id: 5, title: "Blog", to: "/blog" },
-  { id: 6, title: "Contact", to: "/contact" },
+  { id: 3, title: "About", to: "/about" },
+  { id: 4, title: "Contact", to: "/contact" },
 ];
 
 export const clientTestimonialsData = [
