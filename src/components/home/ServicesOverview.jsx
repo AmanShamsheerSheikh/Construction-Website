@@ -109,7 +109,7 @@ function ServicesOverview() {
                   
                   <p className="text-gray mb-6">{service.description}</p>
                   
-                  <div className={`${index % 2 === 1 ? 'lg:text-right' : ''}`}>
+                  {/* <div className={`${index % 2 === 1 ? 'lg:text-right' : ''}`}>
                     <Link 
                       to="/services" 
                       className={`text-primary font-medium hover:underline inline-flex items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
@@ -130,7 +130,7 @@ function ServicesOverview() {
                         </>
                       )}
                     </Link>
-                  </div>
+                  </div> */}
                 </motion.div>
               </div>
             </motion.div>
@@ -172,14 +172,14 @@ function ServicesOverview() {
           })}
         </div>
         
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Link 
             to="/services"
             className="inline-block bg-primary text-whitee px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors"
           >
             View All Services
           </Link>
-        </div>
+        </div> */}
       </Container>
     </section>
   );
