@@ -57,7 +57,7 @@ function CompanyIntro() {
           >
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/src/Assets/office-1.jpg" 
+                src="/src/Assets/blueprint/office-1.jpg" 
                 alt="NK Construction Team" 
                 className="w-full h-auto object-cover"
               />
