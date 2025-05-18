@@ -158,7 +158,7 @@ function ServicesOverview() {
                 <h4 className="text-white text-xl font-bold mb-4">{service.title}</h4>
                 <p className="text-gray mb-6">{service.description}</p>
                 
-                <Link 
+                {/* <Link 
                   to="/services" 
                   className="text-primary font-medium hover:underline inline-flex items-center"
                 >
@@ -166,7 +166,7 @@ function ServicesOverview() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </Link>
+                </Link> */}
               </motion.div>
             );
           })}
